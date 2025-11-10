@@ -19,33 +19,6 @@ BugBounty Dorkhub is a compilation of **Google Dorks**, **Shodan Dorks**, and **
 - **Modern Interface**: Futuristic design with dark theme and smooth animations
 - **Responsive**: Adapted to work on desktop and mobile devices
 
-### 📂 Dork Categories
-
-#### 1. **Subdomains and Certificates** (3 dorks)
-#### 2. **Exposed Files and Directories** (21 dorks)
-#### 3. **WordPress & CMS** (10 dorks)
-#### 4. **Errors and Vulnerabilities** (19 dorks)
-#### 5. **Panels and Access** (4 dorks)
-#### 6. **Services** (7 dorks)
-#### 7. **OSINT & Indexes** (14 dorks)
-#### 8. **Shodan Infrastructure** (30+ dorks)
-#### 9. **Shodan Files and Directories** (22 dorks)
-#### 10. **API Keys** (4 dorks)
-#### 11. **Code Leaks** (14 dorks)
-#### 12. **Cloud Storage** (13 dorks)
-#### 13. **SWF** (4 dorks)
-#### 14. **Basic GitHub Dorks** (29 dorks)
-#### 15. **General GitHub Dorks** (14 dorks)
-#### 16. **Language GitHub Dorks** (4 dorks)
-#### 17. **Useful GitHub Dorks** (27 dorks)
-
-### 💾 Data Persistence
-
-Progress for each domain is saved locally in the browser using `localStorage`. This allows:
-- Continue where you left off
-- Work with multiple domains
-- Don't lose progress when closing the browser
-
 ## 🚀 Usage
 
 1. **Open the `index.html` file** in your web browser
