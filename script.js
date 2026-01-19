@@ -1091,6 +1091,125 @@ function googleSearch(type) {
             var url = 'https://www.shodan.io/search?query=' + encodeURIComponent(site);
             window.open(url, '_blank');
             return;
+        case 300:
+            searchQuery += ' inurl:"/wp-json/wp/v2/users"';
+            break;
+        case 301:
+            searchQuery += ' intitle:"index.of" intext:"api.txt"';
+            break;
+        case 302:
+            searchQuery += ' inurl:"/api/v1" intext:"index of /"';
+            break;
+        case 303:
+            searchQuery += ' ext:php inurl:"api.php?action="';
+            break;
+        case 304:
+            searchQuery += ' intitle:"index of" (api_key OR "api key" OR apiKey) -pool';
+            break;
+        case 305:
+            searchQuery += ' intitle:"Swagger UI" | inurl:swagger-ui | inurl:swagger.json';
+            break;
+        case 306:
+            searchQuery += ' inurl:/graphql | intitle:GraphQL';
+            break;
+        case 310:
+            var swagger = 'filename:swagger.json "' + targetDomain + '"';
+            var swaggerUrl = 'https://github.com/search?q=' + encodeURIComponent(swagger) + '&type=code';
+            window.open(swaggerUrl, '_blank');
+            return;
+        case 311:
+            var jsonExt = 'extension:json "' + targetDomain + '" api';
+            var jsonExtUrl = 'https://github.com/search?q=' + encodeURIComponent(jsonExt) + '&type=code';
+            window.open(jsonExtUrl, '_blank');
+            return;
+        case 312:
+            var apiKeyQuery = '"api key" "' + targetDomain + '"';
+            var apiKeyUrl = 'https://github.com/search?q=' + encodeURIComponent(apiKeyQuery) + '&type=code';
+            window.open(apiKeyUrl, '_blank');
+            return;
+        case 313:
+            var apiKeysQuery = '"api keys" "' + targetDomain + '"';
+            var apiKeysUrl = 'https://github.com/search?q=' + encodeURIComponent(apiKeysQuery) + '&type=code';
+            window.open(apiKeysUrl, '_blank');
+            return;
+        case 314:
+            var apikeyQuery = 'apikey "' + targetDomain + '"';
+            var apikeyUrl = 'https://github.com/search?q=' + encodeURIComponent(apikeyQuery) + '&type=code';
+            window.open(apikeyUrl, '_blank');
+            return;
+        case 315:
+            var bearerQuery = '"authorization: bearer" "' + targetDomain + '"';
+            var bearerUrl = 'https://github.com/search?q=' + encodeURIComponent(bearerQuery) + '&type=code';
+            window.open(bearerUrl, '_blank');
+            return;
+        case 316:
+            var accessTokenQuery = 'access_token "' + targetDomain + '"';
+            var accessTokenUrl = 'https://github.com/search?q=' + encodeURIComponent(accessTokenQuery) + '&type=code';
+            window.open(accessTokenUrl, '_blank');
+            return;
+        case 317:
+            var secretQuery = 'secret "' + targetDomain + '" api';
+            var secretUrl = 'https://github.com/search?q=' + encodeURIComponent(secretQuery) + '&type=code';
+            window.open(secretUrl, '_blank');
+            return;
+        case 318:
+            var tokenQuery = 'token "' + targetDomain + '" api';
+            var tokenUrl = 'https://github.com/search?q=' + encodeURIComponent(tokenQuery) + '&type=code';
+            window.open(tokenUrl, '_blank');
+            return;
+        case 320:
+            var hostnameQuery = 'hostname:"' + targetDomain + '"';
+            var hostnameUrl = 'https://www.shodan.io/search?query=' + encodeURIComponent(hostnameQuery);
+            window.open(hostnameUrl, '_blank');
+            return;
+        case 321:
+            var jsonApiQuery = '"content-type: application/json" ssl:' + targetDomain;
+            var jsonApiUrl = 'https://www.shodan.io/search?query=' + encodeURIComponent(jsonApiQuery);
+            window.open(jsonApiUrl, '_blank');
+            return;
+        case 322:
+            var xmlApiQuery = '"content-type: application/xml" ssl:' + targetDomain;
+            var xmlApiUrl = 'https://www.shodan.io/search?query=' + encodeURIComponent(xmlApiQuery);
+            window.open(xmlApiUrl, '_blank');
+            return;
+        case 323:
+            var okApiQuery = '"200 OK" ssl:' + targetDomain;
+            var okApiUrl = 'https://www.shodan.io/search?query=' + encodeURIComponent(okApiQuery);
+            window.open(okApiUrl, '_blank');
+            return;
+        case 324:
+            var wpJsonQuery = '"wp-json" ssl:' + targetDomain;
+            var wpJsonUrl = 'https://www.shodan.io/search?query=' + encodeURIComponent(wpJsonQuery);
+            window.open(wpJsonUrl, '_blank');
+            return;
+        case 330:
+            var docsRoot = 'https://' + targetDomain + '/docs';
+            window.open(docsRoot, '_blank');
+            return;
+        case 331:
+            var docsApi = 'https://' + targetDomain + '/api/docs';
+            window.open(docsApi, '_blank');
+            return;
+        case 332:
+            var docsSub = 'https://docs.' + targetDomain;
+            window.open(docsSub, '_blank');
+            return;
+        case 333:
+            var devDocs = 'https://dev.' + targetDomain + '/docs';
+            window.open(devDocs, '_blank');
+            return;
+        case 334:
+            var developerDocs = 'https://developer.' + targetDomain + '/docs';
+            window.open(developerDocs, '_blank');
+            return;
+        case 335:
+            var apiDocsSub = 'https://api.' + targetDomain + '/docs';
+            window.open(apiDocsSub, '_blank');
+            return;
+        case 336:
+            var developersDocs = 'https://' + targetDomain + '/developers/documentation';
+            window.open(developersDocs, '_blank');
+            return;
         default:
             alert('Invalid option.');
             return;

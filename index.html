@@ -22,6 +22,7 @@
                 </div>
             </div>
         </div>
+
         <details open>
             <summary>
                 Subdomains and Certificates
@@ -33,6 +34,52 @@
                 <button class="futuristic-button" onclick="googleSearch(30)">Cert Transparency</button>
             </div>
         </details>
+        <details open>
+                <summary>
+                    APIs
+                    <button class="reset-category" onclick="resetCategoryButtons(this.closest('details'))" style="float: right; font-size: 12px; padding: 2px 8px;">Reset</button>
+                </summary>
+                <div class="dork-buttons">
+                    <button class="futuristic-button" onclick="googleSearch(22)">API Endpoints</button>
+                    <button class="futuristic-button" onclick="googleSearch(74)">API Docs</button>
+                    <button class="futuristic-button" onclick="googleSearch(47)">Sharing API Info</button>
+                    <button class="futuristic-button" onclick="googleSearch(49)">Github API</button>
+                    <button class="futuristic-button" onclick="googleSearch(100)">apiKey (JS)</button>
+                    <button class="futuristic-button" onclick="googleSearch(101)">Token (JS)</button>
+                    <button class="futuristic-button" onclick="googleSearch(102)">.env Keys</button>
+                    <button class="futuristic-button" onclick="googleSearch(103)">Auth Bearer (JS)</button>
+                    <button class="futuristic-button" onclick="googleSearch(240)">Docker APIs</button>
+                    <button class="futuristic-button" onclick="googleSearch(241)">Docker Registries</button>
+                    <button class="futuristic-button" onclick="googleSearch(300)">WP JSON Users</button>
+                    <button class="futuristic-button" onclick="googleSearch(301)">API txt Index</button>
+                    <button class="futuristic-button" onclick="googleSearch(302)">API v1 Index</button>
+                    <button class="futuristic-button" onclick="googleSearch(303)">api.php?action</button>
+                    <button class="futuristic-button" onclick="googleSearch(304)">API Key Index</button>
+                    <button class="futuristic-button" onclick="googleSearch(305)">Swagger UI</button>
+                    <button class="futuristic-button" onclick="googleSearch(306)">GraphQL Endpoints</button>
+                    <button class="futuristic-button" onclick="googleSearch(310)">GitHub swagger.json</button>
+                    <button class="futuristic-button" onclick="googleSearch(311)">GitHub extension:json</button>
+                    <button class="futuristic-button" onclick="googleSearch(312)">GitHub api key</button>
+                    <button class="futuristic-button" onclick="googleSearch(313)">GitHub api keys</button>
+                    <button class="futuristic-button" onclick="googleSearch(314)">GitHub apikey</button>
+                    <button class="futuristic-button" onclick="googleSearch(315)">GitHub Authorization: Bearer</button>
+                    <button class="futuristic-button" onclick="googleSearch(316)">GitHub access_token</button>
+                    <button class="futuristic-button" onclick="googleSearch(317)">GitHub secret</button>
+                    <button class="futuristic-button" onclick="googleSearch(318)">GitHub token</button>
+                    <button class="futuristic-button" onclick="googleSearch(320)">Shodan hostname</button>
+                    <button class="futuristic-button" onclick="googleSearch(321)">Shodan JSON APIs</button>
+                    <button class="futuristic-button" onclick="googleSearch(322)">Shodan XML APIs</button>
+                    <button class="futuristic-button" onclick="googleSearch(323)">Shodan 200 OK</button>
+                    <button class="futuristic-button" onclick="googleSearch(324)">Shodan wp-json</button>
+                    <button class="futuristic-button" onclick="googleSearch(330)">Docs /docs</button>
+                    <button class="futuristic-button" onclick="googleSearch(331)">Docs /api/docs</button>
+                    <button class="futuristic-button" onclick="googleSearch(332)">docs.subdomain</button>
+                    <button class="futuristic-button" onclick="googleSearch(333)">dev/docs</button>
+                    <button class="futuristic-button" onclick="googleSearch(334)">developer/docs</button>
+                    <button class="futuristic-button" onclick="googleSearch(335)">api/docs subdomain</button>
+                    <button class="futuristic-button" onclick="googleSearch(336)">/developers/documentation</button>
+                </div>
+            </details>
         <details open>
             <summary>
                 Exposed Files and Directories
@@ -59,8 +106,6 @@
                 <button class="futuristic-button" onclick="googleSearch(65)">PHP Extensions w/ parameters</button>
                 <button class="futuristic-button" onclick="googleSearch(9)">phpinfo()</button>
                 <button class="futuristic-button" onclick="googleSearch(17)">.htaccess files</button>
-                <button class="futuristic-button" onclick="googleSearch(22)">API Endpoints</button>
-                <button class="futuristic-button" onclick="googleSearch(74)">API Docs</button>
                 <button class="futuristic-button" onclick="googleSearch(66)">Juicy Extensions</button>                
                 <button class="futuristic-button" onclick="googleSearch(76)">Sensitive Documents</button>
             </div>
@@ -130,8 +175,6 @@
             <div class="dork-buttons">               
                 <button class="futuristic-button" onclick="googleSearch(38)">GeoServer WFS</button>
                 <button class="futuristic-button" onclick="googleSearch(39)">ArcGIS REST</button>
-                <button class="futuristic-button" onclick="googleSearch(47)">Sharing API Info</button>
-                <button class="futuristic-button" onclick="googleSearch(49)">Github API</button>
                 <button class="futuristic-button" onclick="googleSearch(78)">Adobe Experience Manager (AEM)</button>
                 <button class="futuristic-button" onclick="googleSearch(98)">JFrog Artifactory</button>
                 <button class="futuristic-button" onclick="googleSearch(99)">Firebase</button>
@@ -193,8 +236,6 @@
                 <button class="futuristic-button" onclick="googleSearch(141)">PostgreSQL</button>
                 <button class="futuristic-button" onclick="googleSearch(146)">Odoo</button>
                 <button class="futuristic-button" onclick="googleSearch(147)">Docker</button>
-                <button class="futuristic-button" onclick="googleSearch(240)">Docker APIs</button>
-                <button class="futuristic-button" onclick="googleSearch(241)">Docker Private Registries</button>
                 <button class="futuristic-button" onclick="googleSearch(148)">Kubernetes</button>
                 <button class="futuristic-button" onclick="googleSearch(149)">Jenkins #1</button>
                 <button class="futuristic-button" onclick="googleSearch(150)">Jenkins #2</button>
@@ -226,18 +267,6 @@
                 <button class="futuristic-button" onclick="googleSearch(161)">Secret Keys #4</button>
                 <button class="futuristic-button" onclick="googleSearch(162)">Secret Keys #5</button>
                 <button class="futuristic-button" onclick="googleSearch(163)">Secret Keys #6</button>
-            </div>
-        </details>
-        <details open>
-            <summary>
-                API Keys
-                <button class="reset-category" onclick="resetCategoryButtons(this.closest('details'))" style="float: right; font-size: 12px; padding: 2px 8px;">Reset</button>
-            </summary>
-            <div class="dork-buttons">
-                <button class="futuristic-button" onclick="googleSearch(100)">apiKey</button>
-                <button class="futuristic-button" onclick="googleSearch(101)">Token</button>
-                <button class="futuristic-button" onclick="googleSearch(102)">ENV</button>
-                <button class="futuristic-button" onclick="googleSearch(103)">Authorization: Bearer</button>
             </div>
         </details>
         <details open>

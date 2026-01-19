@@ -104,22 +104,24 @@ summary {
     align-items: center;
 }
 .dork-buttons {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
     gap: 8px;
     padding: 0 10px;
 }
 .futuristic-button {
-    flex: 1 1 calc(33.33% - 8px);
-    min-width: 110px;
-    padding: 8px 0;
+    width: 100%;
+    min-width: 0;
+    padding: 8px 10px;
     margin: 0;
-    font-size: 1em;
+    font-size: 0.95em;
     background: #1ecbe1;
     border: 2px solid #7ee0ff;
     color: #18243a;
     border-radius: 5px;
     font-weight: 600;
+    white-space: normal;
+    word-break: break-word;
     transition: 
         background 0.2s, 
         color 0.2s, 
@@ -278,7 +280,22 @@ summary {
         padding: 16px;
     }
     
-    .futuristic-button {
-        flex: 1 1 100%;
+    .dork-buttons {
+        grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+        gap: 6px;
+    }
+}
+
+@media (min-width: 900px) and (max-width: 1199px) {
+    .dork-buttons {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 10px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .dork-buttons {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: 10px;
     }
 }
